@@ -1,20 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 body{
     margin :0;
     padding:0;
+    /* background-image: url("./"); */
+    /* background-image:url("./images/gymback2.jpg"); */
 }
 *{
     box-sizing: border -box;
     margin:0;
     padding:0;
+    font-family: 'Oswald', sans-serif;
 }
-.container{
-    max-width:1170px;
-    margin:auto;
-
-
+/*-------------------------- navigation bar startr  --------*/
+header .container {
+    /* border: 1px solid red; */
+    padding : 20px;
+    background-color:grey;
 }
+
+header .container .logo {
+    /* border: 1px solid blue; */
+    display: inline;
+}
+
+header .container .nav {
+    /* border: 1px solid green; */
+    display: flex;
+    float: right;
+    
+}
+
+header .container .nav a{
+    padding:0px 20px;
+    background-color: red;
+    border: 1px solid red;
+    text-decoration: none;
+    font-size: 2rem;
+}
+.container .logo span{
+    font-size: 3rem;
+    color: white;
+}
+.container .logo a{
+    text-decoration: none;
+    color: black;
+    font-size: 3rem;
+}
+
 .home{
-    height:100 ;
-    background-image:url('../images/gymback.jpg') ;
+    height:100vh ;
+    background-image: url(./images/gymback.jpg);
     background-size: cover;
+    opacity :80%;
+    display: flex;
+    padding: 20px;
+    opacity: 0.855;
+    /* background-size: cover; */
+}
+/* ul{
+   border:1px solid red;
+} */
+
+.home .card {
+    margin : 10px;
+    border: 2px solid rgb(255, 255, 255);
+    height: 500px;
+    
+    /* background-color: white; */
+    opacity: inherit;
+}
+
+
+
+.home .card:hover {
+    opacity:1;
+    box-shadow: 4px 11px 10px 6px black;
+}
+
+.home .card p {
+    background-color: green;
+    margin: 5px;
+    padding: 10px;
+    color: black;
+    
+}
+.home .card span{
+    display: block;
+    background-color: white;
+    opacity: 80%;
+    font-size: 150%;
+    box-shadow: 1px 1px 10px 6px black;
+    margin: 10px;
+    padding: 0px 140px 0px;
+
 }
