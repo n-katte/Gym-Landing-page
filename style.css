@@ -6,6 +6,7 @@ body{
     /* background-image:url("./images/gymback2.jpg"); */
 }
 *{
+    scroll-behavior: smooth;
     box-sizing: border -box;
     margin:0;
     padding:0;
@@ -28,6 +29,7 @@ header .container .nav {
     display: flex;
     float: right;
     margin: 10px 30px 20px;
+
     
 }
 
@@ -38,7 +40,17 @@ header .container .nav a{
     text-decoration: none;
     font-size: 2rem;
     margin: 0px 2px 0px;
+    color: black;
+    
 }
+header .container .nav a:hover{
+    background:rgb(228, 11, 11);
+    border-radius:  20%;
+    /* box-shadow: 4px 4px 11px 6px black; */
+   
+    
+}
+
 .container .logo span{
     font-size: 3rem;
     color: white;
@@ -50,13 +62,15 @@ header .container .nav a{
 }
 
 .home{
-    height:100vh ;
+     height:100vh ; 
     background-image: url(./images/gymback.jpg);
     background-size: cover;
     opacity :80%;
     display: flex;
+    overflow-wrap: normal;
     padding: 20px;
     opacity: 0.855;
+    width: 100vw;
     /* background-size: cover; */
 }
 /* ul{
@@ -96,5 +110,14 @@ header .container .nav a{
     padding: 0px 140px 0px;
     font-weight: 900;
     color:black;
+
+}
+
+.contact {
+    height: 100vh;
+    background-color: burlywood;
+}
+
+.contact form {
 
 }
